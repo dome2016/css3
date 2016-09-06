@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 50px;
+            height: 300px;
+            border:1px solid #ccc;
+            position: relative;
+            left: 400px;
+            top: 200px;
+            overflow:hidden;
+        }
+        @keyframes light{
+            form{left:0;}
+            to{left:-113px;}
+        }
+        .light{
+            width: 226px;
+            height: 300px;
+            position:absolute;
+            left: 0;
+            top: 0;
+            background:-webkit-repeating-linear-gradient(-45deg,blue 0,blue 20px,#fff 20px,#fff 40px,red 40px,red 60px,#fff 60px,#fff 80px);
+            animation:light 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="light"></div>
+    </div>
+</body>
+</html>
